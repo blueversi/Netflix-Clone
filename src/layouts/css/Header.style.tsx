@@ -42,12 +42,20 @@ export const header = css({
   flexWrap: 'nowrap',
   justifyContent: 'space-between',
   alignItems: 'center',
+  padding: '10px 10px 10px 10px',
   width: '100%',
   maxWidth: '1920px',
-  backgroundColor: 'orange',
+  zIndex: 100,
+});
+
+export const logoSection = css({
+  width: '80%',
 });
 
 export const logo = css({
-  width: '85%',
-  backgroundColor: 'green',
+  fontFamily: 'Bebas Neue',
+  textTransform: 'uppercase',
+  fontSize: '3.5em',
+  color: '#e50914',
+  marginLeft: 50,
 });

@@ -1,6 +1,4 @@
 import { css } from '@emotion/react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 /*
 ----------------------------
@@ -40,21 +38,28 @@ for copy paste
 export const navigation = css({
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'space-evenly',
-  width: '15%',
-  backgroundColor: 'yellow',
+  justifyContent: 'center',
+  width: '20%',
 });
 
 export const button = css({
+  fontFamily: 'Arimo, sans-serif',
+  fontSize: '15px',
   color: '#ffffff',
-  fontWeight: 'bold',
+  fontWeight: 'bolder',
   padding: '8px 10px 8px 10px',
   backgroundColor: '#e50914',
   border: 'none',
   borderRadius: '5px',
+  marginLeft: '30px',
+
+  '&:hover': {
+    cursor: 'pointer',
+  },
 });
 
 export const langSelectWraper = css({
+  fontFamily: 'Arimo, sans-serif',
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'center',
@@ -67,7 +72,8 @@ export const langSelectWraper = css({
 });
 
 export const selectLanguage = css({
-  appearance: 'none',
+  fontFamily: 'Arimo, sans-serif',
+  // appearance: 'none',
   color: '#fff',
   backgroundColor: '#000',
   height: '36px',
@@ -75,4 +81,7 @@ export const selectLanguage = css({
   padding: '8px 5px 8px 5px',
   border: 'none',
   width: '70%',
+  '&:hover': {
+    cursor: 'pointer',
+  },
 });
