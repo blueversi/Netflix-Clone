@@ -7,7 +7,7 @@ import { css } from '@emotion/react';
 ----------------------------
 ----------------------------
 */
-const breakpoints = [320, 769, 1024, 1440];
+const breakpoints = [320, 768, 1024, 1440];
 
 // mq => media query
 const mq = breakpoints.map((bp) => `@media (min-width: ${bp}px)`);
@@ -35,28 +35,18 @@ for copy paste
 ----------------------------
 */
 
-export const navBar = css({
-  margin: '0 auto',
-  display: 'flex',
-  flexDirection: 'row',
-  flexWrap: 'nowrap',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: '10px 10px 10px 10px',
+export const bannerWraper = css({
+  margin: 0,
+  marginTop: '-100px',
+  height: '80vh',
+  background:
+    'url(https://assets.nflxext.com/ffe/siteui/vlv3/20876cab-b49d-4957-bbaf-906ceb1c05f1/efc526df-4926-42b8-b0fb-4516b6237d95/PL-pl-20220117-popsignuptwoweeks-perspective_alpha_website_large.jpg) no-repeat',
+  backgroundSize: 'cover',
+});
+
+export const bannerMask = css({
   width: '100%',
-  maxWidth: '1920px',
-  zIndex: 100,
-});
-
-export const logoSection = css({
-  width: '80%',
-});
-
-export const logo = css({
-  fontFamily: 'Bebas Neue',
-  textTransform: 'uppercase',
-  letterSpacing: '2px',
-  fontSize: '3.5em',
-  color: '#e50914',
-  marginLeft: 50,
+  height: '100%',
+  backgroundColor: 'rgba(0,0,0,0.6)',
+  borderBottom: '8px solid #9a9a9a',
 });
