@@ -50,3 +50,54 @@ export const bannerMask = css({
   backgroundColor: 'rgba(0,0,0,0.6)',
   borderBottom: '8px solid #9a9a9a',
 });
+
+export const bannerContent = css({
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '100%',
+  height: '100%',
+});
+
+export const bannerMessage = css({
+  width: '40%',
+  textAlign: 'center',
+});
+
+export const bannerMessageH1 = css({
+  fontSize: '4.1em',
+  margin: 0,
+});
+
+export const bannerFormWraper = css({
+  textAlign: 'center',
+  width: '40%',
+});
+
+export const bannerForm = css({
+  display: 'flex',
+  flexDirection: 'row',
+  textAlign: 'center',
+  width: '100%',
+
+  '& input': {
+    width: '70%',
+  },
+});
+
+export const button = css({
+  fontFamily: 'Arimo, sans-serif',
+  fontSize: '2em',
+  color: '#ffffff',
+  fontWeight: 'bolder',
+  width: '30%',
+  padding: '20px 10px 20px 10px',
+  backgroundColor: '#e50914',
+  border: 'none',
+  boxSizing: 'border-box',
+
+  '&:hover': {
+    cursor: 'pointer',
+  },
+});
