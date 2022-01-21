@@ -36,13 +36,14 @@ for copy paste
 */
 
 export const header = css({
-  marginTop: 0,
+  margin: '0 auto',
   display: 'flex',
   flexDirection: 'row',
   flexWrap: 'nowrap',
   justifyContent: 'space-between',
   alignItems: 'center',
   width: '100%',
+  maxWidth: '1920px',
   backgroundColor: 'orange',
 });
 
