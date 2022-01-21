@@ -1,4 +1,6 @@
 import { css } from '@emotion/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 /*
 ----------------------------
@@ -39,30 +41,38 @@ export const navigation = css({
   display: 'flex',
   flexDirection: 'row',
   justifyContent: 'space-evenly',
-  width: '20%',
+  width: '15%',
   backgroundColor: 'yellow',
 });
 
 export const button = css({
   color: '#ffffff',
-  padding: '15px 40px',
+  fontWeight: 'bold',
+  padding: '8px 10px 8px 10px',
   backgroundColor: '#e50914',
+  border: 'none',
+  borderRadius: '5px',
 });
 
 export const langSelectWraper = css({
-  color: '#fff',
-  backgroundColor: '#000',
   display: 'flex',
   flexDirection: 'row',
-  justifyContent: 'space-between',
+  justifyContent: 'center',
   alignItems: 'center',
+  color: '#fff',
+  backgroundColor: '#000',
   width: '100px',
-  padding: '8px 5px 8px 5px',
   border: '1px solid #eee',
-  boxSizing: 'border-box',
   borderRadius: '5px',
 });
 
 export const selectLanguage = css({
-  marginLeft: '5px',
+  appearance: 'none',
+  color: '#fff',
+  backgroundColor: '#000',
+  height: '36px',
+  fontSize: '14px',
+  padding: '8px 5px 8px 5px',
+  border: 'none',
+  width: '70%',
 });

@@ -1,6 +1,11 @@
 /** @jsxImportSource @emotion/react */
 import React, { FC } from 'react';
-import { navigation, button, langSelectWraper } from './css/Navigation.style';
+import {
+  navigation,
+  button,
+  langSelectWraper,
+  selectLanguage,
+} from './css/Navigation.style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 const Navigation: FC = () => {
@@ -9,8 +14,8 @@ const Navigation: FC = () => {
       <div css={navigation}>
         <div css={langSelectWraper}>
           <FontAwesomeIcon size='1x' color='#FFF' icon={faGlobe} />
-          <select>
-            <option>Polski</option>
+          <select css={selectLanguage}>
+            <option> Polski</option>
             <option>English</option>
           </select>
         </div>

@@ -48,6 +48,6 @@ export const header = css({
 });
 
 export const logo = css({
-  width: '80%',
+  width: '85%',
   backgroundColor: 'green',
 });
