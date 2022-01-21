@@ -7,7 +7,7 @@ import { css } from '@emotion/react';
 ----------------------------
 ----------------------------
 */
-const breakpoints = [320, 769, 1024, 1440];
+const breakpoints = [320, 768, 1024, 1440];
 
 // mq => media query
 const mq = breakpoints.map((bp) => `@media (min-width: ${bp}px)`);
@@ -35,18 +35,17 @@ for copy paste
 ----------------------------
 */
 
-export const header = css({
-  marginTop: 0,
+export const navigation = css({
   display: 'flex',
   flexDirection: 'row',
-  flexWrap: 'nowrap',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  width: '100%',
-  backgroundColor: 'orange',
+  justifyContent: 'space-evenly',
+
+  width: '20%',
+  backgroundColor: 'yellow',
 });
 
-export const logo = css({
-  width: '80%',
-  backgroundColor: 'green',
+export const button = css({
+  color: '#ffffff',
+  padding: '15px 40px',
+  backgroundColor: '#e50914',
 });

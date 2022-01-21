@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 import React, { FC } from 'react';
-import { header, logo, navigation, button } from './css/Header.style';
+import Navigation from './Navigation';
+import { header, logo } from './css/Header.style';
 
 const Header: FC = () => {
   return (
@@ -8,10 +9,7 @@ const Header: FC = () => {
       <div css={logo}>
         <h1>Logo</h1>
       </div>
-      <div css={navigation}>
-        <button css={button}>Polski</button>
-        <button css={button}>Zaloguj</button>
-      </div>
+      <Navigation />
     </div>
   );
 };
