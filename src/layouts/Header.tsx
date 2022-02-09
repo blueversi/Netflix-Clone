@@ -2,7 +2,6 @@
 import React, { FC } from 'react';
 import Navigation from './Navigation';
 import { navBar, logoSection, logo } from './css/Header.style';
-import Banner from './Banner';
 
 const Header: FC = () => {
   return (
@@ -13,7 +12,6 @@ const Header: FC = () => {
         </div>
         <Navigation />
       </div>
-      <Banner />
     </>
   );
 };

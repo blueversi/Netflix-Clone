@@ -66,9 +66,9 @@ export const langSelectWraper = css({
   alignItems: 'center',
   color: '#fff',
   backgroundColor: '#000',
-  width: '100px',
+  width: '120px',
   border: '1px solid #eee',
-  borderRadius: '5px',
+  borderRadius: '4px',
 });
 
 export const selectLanguage = css({

@@ -19,7 +19,7 @@ const Navigation: FC = () => {
             <option>English</option>
           </select>
         </div>
-        <button css={button}>Zaloguj się</button>
+        <button css={button}>Sign in</button>
       </div>
     </>
   );

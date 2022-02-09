@@ -41,14 +41,14 @@ export const bannerWraper = css({
   height: '80vh',
   background:
     'url(https://assets.nflxext.com/ffe/siteui/vlv3/20876cab-b49d-4957-bbaf-906ceb1c05f1/efc526df-4926-42b8-b0fb-4516b6237d95/PL-pl-20220117-popsignuptwoweeks-perspective_alpha_website_large.jpg) no-repeat',
-  backgroundSize: 'cover',
+  backgroundSize: 'cover top',
 });
 
 export const bannerMask = css({
   width: '100%',
   height: '100%',
   backgroundColor: 'rgba(0,0,0,0.6)',
-  borderBottom: '8px solid #9a9a9a',
+  borderBottom: '8px solid #222',
 });
 
 export const bannerContent = css({
@@ -83,6 +83,7 @@ export const bannerForm = css({
 
   '& input': {
     width: '70%',
+    padding: '10px',
   },
 });
 
